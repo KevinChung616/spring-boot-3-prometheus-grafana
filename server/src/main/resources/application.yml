@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: SERVER-SERVICE
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
